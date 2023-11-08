@@ -9,6 +9,7 @@
 
 $background : hsl(30, 38%, 92%);
 $primary-green : hsl(158, 36%, 37%);
+$hover-green : hsl(158, 36%, 22%);
 $text-grey : hsl(228, 12%, 48%);
 $title-blue: hsl(212, 21%, 14%);
 $white: hsl(0, 0%, 100%);
@@ -107,7 +108,10 @@ button{
     color: $white;
     font-family: $Monsterat;
 }
-
+button:hover{
+    background-color: $hover-green;
+    cursor: pointer;
+}
 @media screen and (max-width : 600px){
     .container{
         flex-direction: column;

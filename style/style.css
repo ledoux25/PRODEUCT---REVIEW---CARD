@@ -97,6 +97,11 @@ button {
   font-family: "Montserrat";
 }
 
+button:hover {
+  background-color: hsl(158, 36%, 22%);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
