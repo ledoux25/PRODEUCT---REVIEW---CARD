@@ -33,10 +33,14 @@ body {
   min-width: 610px;
   min-height: 460px;
 }
-.container .product-image {
+
+.product-image {
   position: relative;
   height: 100%;
-  width: 55%;
+  width: 180%;
+  background-image: url(../images/image-product-desktop.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .text-section {
@@ -44,6 +48,7 @@ body {
   height: 95%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   background-color: hsl(0, 0%, 100%);
   padding: 0px 35px;
   padding-right: 35px;
@@ -61,7 +66,7 @@ body {
 }
 .text-section P {
   font-family: "Montserrat";
-  font-size: 15px;
+  font-size: 14px;
   color: hsl(228, 12%, 48%);
   margin: 15px 0;
 }
@@ -92,12 +97,48 @@ button {
   font-family: "Montserrat";
 }
 
-@media screen and (max-widh: 600px) {
+@media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
-    background-color: red;
+    min-width: 372px;
+    min-height: 10px;
+    max-width: 375px;
+    width: 75%;
+    height: 90vh;
+    justify-content: flex-start;
+  }
+  .product-image {
+    position: relative;
+    background-image: url(../images/image-product-mobile.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 105%;
+    height: 40%;
+    box-sizing: border-box;
   }
   .text-section {
-    background-color: red;
+    height: 55%;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    margin-top: 10px;
+  }
+  .text-section p {
+    margin: 5px 0;
+  }
+  .text-section h1 {
+    margin: 5px 0;
+  }
+  .text-section .price {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    height: 570px;
+    min-height: 565px;
+    min-width: 300px;
+  }
+  h1 {
+    font-size: 28px;
   }
 }/*# sourceMappingURL=style.css.map */
